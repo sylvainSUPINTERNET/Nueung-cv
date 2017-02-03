@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+
+{% block links %}
+    <ul>
+        <li>
+            {% if username is empty %}
+                <h3><!-- not connected --></h3>
+            {% else %}
+                <h3>{{ username }} </h3>
+            {% endif %}
+            <a href="{{ path('home_page') }}">Home</a>
+            <a href="{{ path('skill_home') }}">Skills</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block body %}
+
+{% endblock %}

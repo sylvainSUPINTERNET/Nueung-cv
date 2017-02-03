@@ -1,0 +1,9 @@
+services:
+    index:
+        class: NueungBundle\Services\IndexManager
+        arguments: ["salut"]
+        #arguments: ["@service_id", "salut", "%parameter%"]
+    skill:
+         class: NueungBundle\Services\SkillManager
+         arguments: [username,"@doctrine.orm.entity_manager"]
+         #arguments: ["@service_id", "salut", "%parameter%"]
